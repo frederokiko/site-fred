@@ -1,0 +1,133 @@
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .main-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+  
+    .school-info {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+  
+    .project-description {
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  
+    .tech-badge {
+      background: #f0f0f0;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  }
+  
+  .github-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  
+    .github-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background: #555;
+      }
+  
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  
+  .screenshots-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  
+    .screenshot-container {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+  
+      &:hover {
+        .screenshot-overlay {
+          opacity: 1;
+        }
+      }
+  
+      .screenshot {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+  
+      .screenshot-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+  
+        p {
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .github-links {
+      flex-direction: column;
+    }
+  }
