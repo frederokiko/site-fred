@@ -93,6 +93,31 @@ export class DashboardComponent {
           alt: 'Dashboard F1',
           description: 'API F1 , FASTAPI'
         },
+        {
+          src: 'assets/images/f1-3.jpg',
+          alt: 'Dashboard F1',
+          description: 'Un graphique sur les point du pilote sur toute sa carriere'
+        },
+        {
+          src: 'assets/images/f1-4.jpg',
+          alt: 'Dashboard F1',
+          description: "Resultats pour l'année selectionée et la position finale"
+        },
+        {
+          src: 'assets/images/f1-5.jpg',
+          alt: 'Dashboard F1',
+          description: 'Tous les pilotes sont affichés , leur nationalité et les liens wikipedia les concernants'
+        },
+        {
+          src: 'assets/images/f1-6.jpg',
+          alt: 'Dashboard F1',
+          description: "Voir tous les pilotes d'une écurie et le nombre d'année et de course réalisée pour cette écurie "
+        },
+        {
+          src: 'assets/images/f1-7.jpg',
+          alt: 'Dashboard F1',
+          description: 'Le nom du circuit , son pays et un lien wikipedia sur son histoire et la géolocalisation du site via les données du fichier csv'
+        },
         // Ajoutez d'autres images ici
       ],
       school: 'TechnofuturTIC - Formation Data Analyst'
