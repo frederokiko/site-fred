@@ -1,1 +1,22 @@
-<p>mirco à une type R</p>
+<div class="legos-container">
+    <div class="intro-section">
+      <h1>Ma Passion pour les LEGO</h1>
+      <p>Depuis mon enfance, je suis passionné par les LEGO. Ces petites briques m'ont permis de développer ma créativité et mon imagination. Je prends plaisir à assembler des modèles emblématiques.</p>
+    </div>
+
+    <div class="gallery">
+      @for (creation of modelisme; track creation.id) {
+        <div class="gallery-item">
+          <div class="image-container">
+            <img [src]="creation.image" [alt]="creation.title">
+
+          </div>
+          <div class="overlay">
+            <h3>{{creation.title}}</h3>
+            <p>{{creation.description}}</p>
+          </div>
+        </div>
+      }
+    </div>
+    
+  </div>

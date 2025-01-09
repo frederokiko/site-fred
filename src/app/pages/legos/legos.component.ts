@@ -51,6 +51,30 @@ export class LegosComponent {
       title: 'Création 6',
       description: 'Description détaillée de la création 6...'
     },
+    {
+      id: 7,
+      image: 'assets/images/lego7.jpg',
+      title: 'Création 7',
+      description: 'Description détaillée de la création 6...'
+    },
+    {
+      id: 8,
+      image: 'assets/images/lego8.jpg',
+      title: 'Création 8',
+      description: 'Description détaillée de la création 6...'
+    },
+    {
+      id: 9,
+      image: 'assets/images/lego9.jpg',
+      title: 'Création 9',
+      description: 'Description détaillée de la création 6...'
+    },
+    {
+      id: 10,
+      image: 'assets/images/lego10.jpg',
+      title: 'Création 10',
+      description: 'Description détaillée de la création 6...'
+    },
   ];
 }
 

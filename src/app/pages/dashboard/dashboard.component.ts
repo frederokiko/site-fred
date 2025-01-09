@@ -69,7 +69,7 @@ export class DashboardComponent {
         {
           src: 'assets/images/location8.jpg',
           alt: 'Page d\'accueil',
-          description: 'Capture de mon code en c#'
+          description: "Capture d'une partie de mon code en c#"
         },
         // Ajoutez d'autres images ici
       ],

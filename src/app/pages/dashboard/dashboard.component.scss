@@ -131,3 +131,320 @@
       flex-direction: column;
     }
   }
+
+
+
+
+// 2em 
+
+
+
+// .portfolio-container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 2rem;
+// }
+
+// .main-title {
+//   text-align: center;
+//   color: #333;
+//   margin-bottom: 3rem;
+//   font-size: 2.5rem;
+// }
+
+// .project-card {
+//   background: white;
+//   border-radius: 12px;
+//   padding: 2rem;
+//   margin-bottom: 3rem;
+//   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+//   h2 {
+//     color: #333;
+//     margin-bottom: 1rem;
+//     font-size: 1.8rem;
+//   }
+
+//   .school-info {
+//     color: #666;
+//     font-style: italic;
+//     margin-bottom: 1.5rem;
+//   }
+
+//   .project-description {
+//     color: #444;
+//     line-height: 1.6;
+//     margin-bottom: 1.5rem;
+//   }
+// }
+
+// .technologies {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 0.5rem;
+//   margin-bottom: 1.5rem;
+
+//   .tech-badge {
+//     background: #f0f0f0;
+//     padding: 0.5rem 1rem;
+//     border-radius: 20px;
+//     font-size: 0.9rem;
+//     color: #333;
+//   }
+// }
+
+// .github-links {
+//   display: flex;
+//   gap: 1rem;
+//   margin-bottom: 2rem;
+//   flex-wrap: wrap;
+
+//   .github-link {
+//     display: flex;
+//     align-items: center;
+//     gap: 0.5rem;
+//     padding: 0.5rem 1rem;
+//     background: #333;
+//     color: white;
+//     text-decoration: none;
+//     border-radius: 6px;
+//     transition: background-color 0.3s ease;
+
+//     &:hover {
+//       background: #555;
+//     }
+
+//     svg {
+//       width: 20px;
+//       height: 20px;
+//     }
+//   }
+// }
+
+// .screenshots-gallery {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   gap: 1.5rem;
+
+//   .screenshot-container {
+//     position: relative;
+//     border-radius: 8px;
+//     overflow: hidden;
+//     aspect-ratio: 16/9;
+
+//     &:hover {
+//       .screenshot {
+//         transform: scale(1.5);
+//         z-index: 2;
+//       }
+      
+//       .screenshot-overlay {
+//         opacity: 1;
+//         bottom: 0;
+//         z-index: 3;
+//         height: auto;
+//         max-height: 30%;
+//         transform: translateY(0);
+//       }
+//     }
+
+//     .screenshot {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       display: block;
+//       transition: transform 0.3s ease;
+//     }
+
+//     .screenshot-overlay {
+//       position: absolute;
+//       left: 0;
+//       right: 0;
+//       bottom: -100%;
+//       background: rgba(0, 0, 0, 0.8);
+//       padding: 1rem;
+//       opacity: 0;
+//       transition: all 0.3s ease;
+//       transform: translateY(100%);
+
+//       p {
+//         color: white;
+//         text-align: center;
+//         margin: 0;
+//         font-size: 0.9rem;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .github-links {
+//     flex-direction: column;
+//   }
+// }
+
+
+
+// 3em 
+
+
+
+// Portfolio Gallery with Hover Effects
+
+// .portfolio-container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 2rem;
+//   position: relative;
+// }
+
+// /* [Previous CSS remains unchanged until .screenshots-gallery] */
+
+// .screenshots-gallery {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   gap: 1.5rem;
+
+//   .screenshot-container {
+//     position: relative;
+//     border-radius: 8px;
+//     overflow: hidden;
+//     aspect-ratio: 16/9;
+//     cursor: pointer;
+
+//     &:hover {
+//       .screenshot-preview {
+//         opacity: 1;
+//         visibility: visible;
+//       }
+//     }
+
+//     .screenshot {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       display: block;
+//     }
+
+//     .screenshot-preview {
+//       position: fixed;
+//       top: 0;
+//       left: 0;
+//       width: 100vw;
+//       height: 100vh;
+//       background: rgba(0, 0, 0, 0.9);
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       z-index: 1000;
+//       opacity: 0;
+//       visibility: hidden;
+//       transition: opacity 0.3s ease;
+
+//       img {
+//         max-width: 90%;
+//         max-height: 80vh;
+//         object-fit: contain;
+//       }
+
+//       .screenshot-overlay {
+//         position: fixed;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         background: rgba(0, 0, 0, 0.8);
+//         padding: 1rem;
+//         text-align: center;
+
+//         p {
+//           color: white;
+//           margin: 0;
+//           font-size: 1rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// ok
+
+
+
+
+// .screenshots-gallery {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   gap: 1.5rem;
+
+//   .screenshot-container {
+//       position: relative;
+//       border-radius: 8px;
+//       overflow: hidden;
+//       aspect-ratio: 16/9;
+//       cursor: pointer;
+
+//       &:hover {
+//           .screenshot {
+//               position: fixed;
+//               top: 50%;
+//               left: 50%;
+//               transform: translate(-50%, -50%);
+//               width: 80vw;
+//               height: 80vh;
+//               object-fit: contain;
+//               z-index: 1000;
+//               border-radius: 8px;
+//           }
+          
+//           .screenshot-overlay {
+//               opacity: 1;
+//               position: fixed;
+//               bottom: 0;
+//               left: 0;
+//               right: 0;
+//               top: auto;
+//               background: rgba(0, 0, 0, 0.8);
+//               z-index: 1001;
+//               height: auto;
+//               padding: 1rem;
+
+//               p {
+//                   color: white;
+//                   text-align: center;
+//                   margin: 0;
+//               }
+//           }
+          
+//           &::after {
+//               content: '';
+//               position: fixed;
+//               top: 0;
+//               left: 0;
+//               right: 0;
+//               bottom: 0;
+//               background: rgba(0, 0, 0, 0.8);
+//               z-index: 999;
+//           }
+//       }
+
+//       .screenshot {
+//           width: 100%;
+//           height: 100%;
+//           object-fit: cover;
+//           transition: all 0.3s ease;
+//       }
+
+//       .screenshot-overlay {
+//           position: absolute;
+//           top: 0;
+//           left: 0;
+//           right: 0;
+//           bottom: 0;
+//           opacity: 0;
+//           transition: opacity 0.3s ease;
+//       }
+//   }
+// }
+
