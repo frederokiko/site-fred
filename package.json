@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:site-fred": "node dist/site-fred/server/server.mjs",
-    "deploy": "ng build && npx gh-pages -d dist/site-fred"
+    "build:prod": "ng build --configuration production --base-href=/site-fred/",
+    "deploy": "npm run build:prod && npx gh-pages -d dist/site-fred/browser"
   },
   "private": true,
   "dependencies": {
