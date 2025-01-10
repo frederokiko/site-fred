@@ -19,7 +19,7 @@ export class MircoComponent {
       id: 1,
       image: 'assets/images/mod1.jpg',
       title: 'Mazinger Z',
-      description: "a compléter"
+      description: "C'est mon tout premier"
     },
     {
       id: 2,
