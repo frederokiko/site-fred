@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:site-fred": "node dist/site-fred/server/server.mjs",
-    "deploy": "ng build && npx gh-pages -d dist/[nom-du-projet]"
+    "deploy": "ng build && npx gh-pages -d dist/site-fred"
   },
   "private": true,
   "dependencies": {
