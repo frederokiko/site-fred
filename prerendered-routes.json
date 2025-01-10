@@ -1,12 +1,12 @@
 {
   "routes": {
-    "/": {},
-    "/about": {},
-    "/contact": {},
-    "/dashboard": {},
-    "/legos": {},
-    "/mirco": {},
-    "/profile": {},
-    "/settings": {}
+    "/site-fred": {},
+    "/site-fred/about": {},
+    "/site-fred/contact": {},
+    "/site-fred/dashboard": {},
+    "/site-fred/legos": {},
+    "/site-fred/mirco": {},
+    "/site-fred/profile": {},
+    "/site-fred/settings": {}
   }
 }

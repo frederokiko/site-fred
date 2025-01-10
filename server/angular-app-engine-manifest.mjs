@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/site-fred/',
   entryPoints: {
     '': () => import('./main.server.mjs')
   },
