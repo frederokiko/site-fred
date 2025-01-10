@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:site-fred": "node dist/site-fred/server/server.mjs",
-    "build:prod": "ng build --configuration production --base-href=/site-fred/",
+    "build:prod": "ng build --configuration production",
     "deploy": "npm run build:prod && npx gh-pages -d dist/site-fred/browser"
   },
   "private": true,
