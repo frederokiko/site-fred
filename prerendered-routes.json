@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "/": {},
+    "/about": {},
+    "/contact": {},
+    "/dashboard": {},
+    "/legos": {},
+    "/mirco": {},
+    "/profile": {},
+    "/settings": {}
+  }
+}
