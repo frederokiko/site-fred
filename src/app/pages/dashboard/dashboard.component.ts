@@ -123,4 +123,14 @@ export class DashboardComponent {
       school: 'TechnofuturTIC - Formation Data Analyst'
     }
   ];
+  //ajouts
+  selectedImage: ProjectImage | null = null;
+
+  openImage(image: ProjectImage): void {
+    this.selectedImage = image;
+  }
+
+  closeImage(): void {
+    this.selectedImage = null;
+  }
 }

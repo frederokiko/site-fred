@@ -18,26 +18,26 @@ export class MircoComponent {
     {
       id: 1,
       image: 'assets/images/mod1.jpg',
-      title: 'titi',
+      title: 'Mazinger Z',
       description: "a compléter"
     },
     {
       id: 2,
       image: 'assets/images/mod2.jpg',
-      title: 'popo',
-      description: 'a completer'
+      title: 'Mazinger Goldorak',
+      description: "J'ai longtemps cherché ce modele qui à fait partie de mon enfance ..."
     },
     {
       id: 3,
       image: 'assets/images/mod3.jpg',
-      title: 'popo',
-      description: 'a completer'
+      title: 'Combat de Mazinger',
+      description: "J'aime à quelle points on peux réaliser de belles scènes"
     },
     {
       id: 4,
       image: 'assets/images/mod4.jpg',
-      title: 'popo',
-      description: 'a completer'
+      title: 'Mon vaisseau Albator ',
+      description: 'Je dois encore le peindre'
     },
   ];
 }

@@ -8,4 +8,6 @@ import { RouterLink } from '@angular/router';
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
-export class SidebarComponent {}
+export class SidebarComponent {
+  
+}

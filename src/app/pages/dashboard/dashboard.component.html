@@ -1,21 +1,5 @@
-<!-- <h1>Ici tu peux découvrir plusieurs de mes réalisation :</h1>
-<p>Celui-ci est un site que j'ai créé lors d'un labo final de formation full stack orienté cyber sécurité à Technofuturtic</p>
-<p>Il est question d'un site de location de maison ou d'appartement ayant plusieurs critere de recherche :</p>
-<p>Voici 2 lien vers mon git</p>
-<a href="https://github.com/frederokiko/LaboLocation_API">Le back-end en C# :</a><br>
-<a href="https://github.com/frederokiko/malocation">Le front-end en angular</a>
-<p>Voici quelques capture d'écran :</p>
-<p>Celui-ci est un site que j'ai créé lors d'un labo final de formation data analyste à Technofuturtic</p>
-<p>Il est question d'un site qui reprend 13 fichier csv de données sur la formule 1 depuis 1950 à nos jours et qui permet de faire beaucoups de recherche sur les pilotes , les écuries , etc ...  </p>
-<p>Voici 2 lien vers mon git</p> 
-<a href="https://github.com/frederokiko/mon_backend_f1">Le back-end en python :</a><br>
-<a href="https://github.com/frederokiko/my-fastapi-app">Le front-end en angular</a>
-<p>Voici quelques capture d'écran :</p> -->
 
-<!-- 2em  -->
-
- 
-<div class="portfolio-container">
+  <div class="portfolio-container">
     <h1 class="main-title">Mes Réalisations</h1>
   
     <div class="projects">
@@ -51,7 +35,7 @@
   
           <div class="screenshots-gallery">
             @for (image of project.images; track image.src) {
-              <div class="screenshot-container">
+              <div class="screenshot-container" (click)="openImage(image)">
                 <img [src]="image.src" [alt]="image.alt" class="screenshot">
                 <div class="screenshot-overlay">
                   <p>{{image.description}}</p>
@@ -62,7 +46,14 @@
         </div>
       }
     </div>
-  </div> 
-
-
-  <!-- 3em  -->
+  
+    @if (selectedImage) {
+      <div class="modal" (click)="closeImage()">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+          <button class="close-button" (click)="closeImage()">×</button>
+          <img [src]="selectedImage.src" [alt]="selectedImage.alt" class="modal-image">
+          <p class="modal-description">{{selectedImage.description}}</p>
+        </div>
+      </div>
+    }
+  </div>

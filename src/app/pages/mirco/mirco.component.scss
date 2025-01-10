@@ -47,13 +47,14 @@
     .image-container {
       position: relative;
       aspect-ratio: 1.5;
-      width: 100%;
+      width: 120%;
   
       img {
-        width: 100%;
+        width: 75%;
         height: 100%;
         object-fit: cover;
         display: block;
+        position: center;
       }
   
       .overlay {
