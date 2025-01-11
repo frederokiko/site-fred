@@ -17,8 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/site-fred/",
-            "deployUrl": "/site-fred/",
+            "baseHref": "/",
+            
             "outputPath": "dist/site-fred/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
