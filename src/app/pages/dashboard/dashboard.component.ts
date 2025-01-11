@@ -25,7 +25,7 @@ export class DashboardComponent {
   projects = [
     {
       id: 1,
-      title: 'Site de Location Immobilière',
+      title: 'Projet de site de Location Immobilière',
       description: 'Site de location de maisons et d\'appartements avec système de recherche multicritères.',
       technologies: ['Angular', 'C#', 'SQL Server'],
       gitFrontend: 'https://github.com/frederokiko/malocation',
@@ -77,7 +77,7 @@ export class DashboardComponent {
     },
     {
       id: 2,
-      title: 'Application Formula 1 ',
+      title: 'Projet sur des données réelles de Formule 1 ',
       description: 'Application d\'analyse de données F1 utilisant 13 fichiers CSV couvrant les statistiques depuis 1950.',
       technologies: ['Angular', 'Python', 'FastAPI','SQL Server'],
       gitFrontend: 'https://github.com/frederokiko/my-fastapi-app',
