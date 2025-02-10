@@ -19,7 +19,7 @@ export class MircoComponent {
       id: 1,
       image: 'assets/images/mod1.jpg',
       title: 'Mazinger Z',
-      description: "C'est mon tout premier"
+      description: "C'est mon tout premier mazinger"
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export class MircoComponent {
       id: 3,
       image: 'assets/images/mod3.jpg',
       title: 'Combat de Mazinger',
-      description: "J'aime à quelle points on peux réaliser de belles scènes"
+      description: "J'aime à quelle points on peux réaliser de belles scènes en statiques mais réalistes"
     },
     {
       id: 4,
@@ -79,7 +79,7 @@ export class MircoComponent {
       id: 11,
       image: 'assets/images/mod11.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: "Goldorak et le Cyberlab du capitaine Flam"
+      description: "Goldorak et le Cyberlab du capitaine Flam , je n'ai pas su le reprendre ,dommage 😪😪"
     },
     {
       id: 12,
@@ -91,13 +91,13 @@ export class MircoComponent {
       id: 13,
       image: 'assets/images/mod13.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: "Reproduction de la terre en Lego"
+      description: "Reproduction en Lego de la photos de la terre prise de l'espace"
     },
     {
       id: 14,
       image: 'assets/images/mod14.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: "Reproduction avion de chasse Français"
+      description: "Reproduction << Aplha Jet >>  Français"
     },
     {
       id: 15,
@@ -121,7 +121,7 @@ export class MircoComponent {
       id: 18,
       image: 'assets/images/mod18.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " La Voie Lactée"
+      description: " La Voie Lactée "
     },
     {
       id: 19,
@@ -139,7 +139,7 @@ export class MircoComponent {
       id: 21,
       image: 'assets/images/mod21.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " SpaceX falcon 9 model"
+      description: " SpaceX falcon 9 qui peut envoyer des hommes vers l'ISS ou des satelites en orbite"
     },
     {
       id: 22,
@@ -181,13 +181,13 @@ export class MircoComponent {
       id: 28,
       image: 'assets/images/mod28.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " Faucon Millennium : Starwars"
+      description: " Faucon Millennium : Starwars (0,5 au dessus de la vitesse de la lumière)"
     },
     {
       id: 29,
       image: 'assets/images/mod29.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " Avion allemand"
+      description: " Avion biplan allemand"
     },
     {
       id: 30,
@@ -199,7 +199,7 @@ export class MircoComponent {
       id: 31,
       image: 'assets/images/mod31.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " Hubble (télescope spatial)"
+      description: " Hubble : le télescope est lancé le 24 avril 1990 par la mission STS-31 de la navette spatiale Discovery."
     },
     {
       id: 32,
@@ -211,25 +211,25 @@ export class MircoComponent {
       id: 33,
       image: 'assets/images/mod33.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " Avion en Lego"
+      description: " Avion biplan"
     },
     {
       id: 34,
       image: 'assets/images/mod34.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " Visseuse sans fil Lego"
+      description: " Visseuse sans fil "
     },
     {
       id: 35,
       image: 'assets/images/mod35.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " Basket Lego"
+      description: " Basket"
     },
     {
       id: 36,
       image: 'assets/images/mod36.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: " Avion Lego"
+      description: " Avion biplan"
     },
     {
       id: 37,
@@ -265,7 +265,7 @@ export class MircoComponent {
       id: 42,
       image: 'assets/images/mod42.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: "Avion << Le Concorde >>"
+      description: "Avion << Concorde >>"
     },
     {
       id: 43,
@@ -283,7 +283,7 @@ export class MircoComponent {
       id: 45,
       image: 'assets/images/mod45.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: "Diorama ne New-york"
+      description: "Diorama de New-york"
     },
     {
       id: 46,
@@ -307,7 +307,7 @@ export class MircoComponent {
       id: 49,
       image: 'assets/images/mod50.jpg',
       title: 'Expo Liège-Guillemins 09/02/2025 - Vers la lune et au dela !',
-      description: "Diorama contenant plusieurs modeles Lego"
+      description: "Diorama contenant plusieurs modeles Lego de +- 1980 à nos jours"
     },
     {
       id: 50,
