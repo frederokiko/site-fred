@@ -8,6 +8,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { LegosComponent } from './pages/legos/legos.component';
 import { MircoComponent } from './pages/mirco/mirco.component';
+import { VideoComponent } from './pages/video/video.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,5 +19,6 @@ export const routes: Routes = [
   { path: 'settings', component: SettingsComponent },
   {path:'legos',component:LegosComponent},
   {path:'mirco',component:MircoComponent},
+  {path:'video',component:VideoComponent},
   { path: '**', redirectTo: '' } // Redirection vers home si la route n'existe pas
 ];

@@ -1,0 +1,46 @@
+<!-- <p>video works!</p> -->
+<!-- <div class="video-container">
+    <h2>Liste des vidéos</h2>
+    <ul>
+      <li *ngFor="let video of videos" (click)="playVideo(video)">
+        {{ video.title }}
+      </li>
+    </ul>
+  </div> -->
+  
+  <!-- Modale pour afficher la vidéo -->
+  <!-- <div class="video-modal" *ngIf="selectedVideo" (click)="closeVideo()">
+    <div class="video-wrapper" (click)="$event.stopPropagation()">
+      <video #videoPlayer controls autoplay>
+        <source [src]="selectedVideo?.src" type="video/mp4" />
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
+      <button class="close-btn" (click)="closeVideo()">✖</button>
+    </div>
+  </div> -->
+  <div class="video-container">
+    <h2><strong>Liste des vidéos</strong> </h2>
+    <br>
+    <ul>
+      @for (video of videos; track video.src) {
+        <li (click)="playVideo(video)">
+          {{ video.title }}
+        </li>
+      }
+    </ul>
+  </div>
+  
+  <!-- Modale pour afficher la vidéo -->
+  @if (selectedVideo) {
+    <div class="video-modal" (click)="closeVideo()">
+      <div class="video-wrapper" (click)="$event.stopPropagation()">
+        <video #videoPlayer controls autoplay>
+          <source [src]="selectedVideo?.src" type="video/mp4" />
+          Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+        <button class="close-btn" (click)="closeVideo()">✖</button>
+      </div>
+    </div>
+  }
+  
+  
