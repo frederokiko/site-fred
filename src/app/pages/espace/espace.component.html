@@ -1,0 +1,70 @@
+<div class="stargate">
+    <div class="stargate__portal" *ngIf="vortexActive">
+      <!-- Opening sequence video -->
+      <video #videoElement 
+             *ngIf="openingVideo" 
+             autoplay 
+             muted 
+             playsinline 
+             (ended)="onVortexOpened()">
+        <source src="assets/images/ouverture_vortex.mp4" type="video/mp4">
+      </video>
+  
+      <!-- Main wormhole animation (looping) -->
+      <video #videoElement 
+             *ngIf="mainVideo" 
+             autoplay 
+             muted 
+             playsinline 
+             loop>
+        <source src="https://cdn.pixabay.com/video/2018/08/15/17801-285184194_large.mp4" type="video/mp4">
+      </video>
+  
+      <!-- Closing sequence video -->
+      <video #videoElement 
+             *ngIf="closingVideo" 
+             autoplay 
+             muted 
+             playsinline 
+             (ended)="onVortexClosed()">
+        <source src="assets/images/fermeture_vortex.mp4" type="video/mp4">
+      </video>
+    </div>
+  
+    <!-- Iris mechanism -->
+    <div class="stargate__iris" [ngClass]="{'stargate__iris--closed': irisOpen, 'stargate__iris--open': !irisOpen}">
+      <div class="iris-blade" 
+           *ngFor="let i of irisBlades" 
+           [style]="getBladeRotation(i)">
+      </div>
+    </div>
+    <!-- Chevron Containers -->
+    <div class="chevron chevron-1" [ngClass]="{'active': chevronStates[0]}"></div>
+    <div class="chevron chevron-2" [ngClass]="{'active': chevronStates[1]}"></div>
+    <div class="chevron chevron-3" [ngClass]="{'active': chevronStates[2]}"></div>
+    <div class="chevron chevron-4" [ngClass]="{'active': chevronStates[3]}"></div>
+    <div class="chevron chevron-5" [ngClass]="{'active': chevronStates[4]}"></div>
+    <div class="chevron chevron-6" [ngClass]="{'active': chevronStates[5]}"></div>
+    <div class="chevron chevron-7" [ngClass]="{'active': chevronStates[6]}"></div>
+  
+    <!-- Iris control button -->
+    <button class="iris-button" (click)="toggleIris()" *ngIf="vortexActive || videoPaused ">
+      {{ !irisOpen ? "Ouvrir l' IRIS" : "Fermer l' IRIS'" }}
+    </button>
+  </div>
+  
+  <!-- DHD (Dial Home Device) -->
+  <div class="stargate__dhd">
+    <img [src]="dhdImage" alt="DHD" class="dhd-image">
+    <button class="dhd-button" 
+            [ngClass]="{'active': !closingVideo}" 
+            (click)="toggleStargate()">
+    </button>
+    
+   
+  </div>
+  <button class="download" (click)="downloadMusic()">🎶 Télécharger la musique : générée avec Suno 🎶</button>
+  <label class="lab"for="volume">Volume ==></label>
+  <input class="volume" id="volume" type="range" min="0" max="1" step="0.01" [(ngModel)]="audioVolume" (input)="changeVolume()">
+  <p class="texte1">Créé en angular , cette porte est faite pour les fan et démontrer mes talents de développeur</p>
+  <p class="texte2">Laissez-moi vos commentaire via l'onglets contact "Envoyez-moi un message", merci 😉</p>

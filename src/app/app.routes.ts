@@ -9,6 +9,7 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { LegosComponent } from './pages/legos/legos.component';
 import { MircoComponent } from './pages/mirco/mirco.component';
 import { VideoComponent } from './pages/video/video.component';
+import { EspaceComponent } from './pages/espace/espace.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,5 +21,6 @@ export const routes: Routes = [
   {path:'legos',component:LegosComponent},
   {path:'mirco',component:MircoComponent},
   {path:'video',component:VideoComponent},
+  {path:'espace',component:EspaceComponent},
   { path: '**', redirectTo: '' } // Redirection vers home si la route n'existe pas
 ];

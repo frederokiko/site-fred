@@ -1,0 +1,256 @@
+.stargate {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    background: #0a0a1a url('https://res.cloudinary.com/shanomurphy/image/upload/v1520182770/stargate_tztoon.jpg') no-repeat center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 3;
+  }
+  
+  .stargate__portal {
+    position: absolute;
+    width: 78vh;
+    height: 78vh;
+    transform: translateX(-0%) translateY(8.5%);
+    border-radius: 50%;
+    overflow: hidden;
+    clip-path: ellipse(100% 55% at 50% 40%);
+    z-index: 1;
+    box-shadow: inset 0 0 50px rgba(66, 133, 244, 0.8);
+  }
+  
+  .stargate__portal video {
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  .stargate__iris {
+    position: absolute;
+    top: 101px;
+    left: 101px;
+    width: 78vh;
+    height: 78vh;
+    transform: translateX(-0%) translateY(8.5%);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    transition: transform 0.5s ease;
+    clip-path: ellipse(100% 55% at 50% 40%);
+  }
+  
+  .iris-blade {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    //box-shadow: 0 0 2px 2px white;
+    background-color: rgb(145, 143, 143);
+    transform-origin: right center;
+    clip-path: polygon( 25% 36%, 100% 50%, 50% 50%);
+    transition:  1.5s ease-in-out;
+    scale: (3.3);
+  }
+  
+  .iris-blade::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%; // Arrondir les bords 
+    border: 2px dashed rgba(255, 255, 255, 0.8); 
+    
+   // Effet de texture d'écailles 
+    background-image: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.1) 10%, transparent 50%),
+                      radial-gradient(circle at 90% 10%, rgba(255, 255, 255, 0.1) 10%, transparent 50%),
+                      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2) 20%, transparent 70%);
+    background-size: 30px 30px;
+    opacity: 0.8;
+    mix-blend-mode: overlay; 
+    
+    /* Ajuster la position des pointillés */
+    outline: 1px dashed rgba(7, 7, 7, 0.6);
+    outline-offset: -15px;
+  }
+  
+  .stargate__iris--closed .iris-blade {
+    transform: rotate(var(--rotation)) scale(0.6) translateX(-50%);
+  }
+  
+  @keyframes pulse {
+    0% { border-color: rgba(243, 241, 241, 0.6); box-shadow: 0 0 10px rgba(66, 133, 244, 0.4); }
+    50% { border-color: rgba(240, 237, 237, 0.6); box-shadow: 0 0 20px rgba(66, 133, 244, 0.8); }
+    100% { border-color: rgba(240, 237, 237, 0.6); box-shadow: 0 0 10px rgba(66, 133, 244, 0.4); }
+  }
+  
+  .stargate__iris--open .iris-blade {
+    transform: rotate(var(--rotation)) scale(1) translateX(0);
+  }
+  .download{
+    position: absolute;
+    bottom: 700px;
+    left: 1200px;
+    background-color: #333;
+    color: white;
+    border: 2px solid #4285f4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 4;
+    transition: all 0.3s ease;
+  }
+  .lab{
+    position: absolute;
+    bottom: 600px;
+    left: 1200px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 4;
+    //transition: all 0.3s ease;
+  }
+  .texte1{
+    position: absolute;
+    bottom: 500px;
+    left: 1200px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 4;
+    //transition: all 0.3s ease;
+  }
+  .texte2{
+    position: absolute;
+    bottom: 450px;
+    left: 1200px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 4;
+    //transition: all 0.3s ease;
+  }
+  .volume{
+    position: absolute;
+    bottom: 600px;
+    left: 1350px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 4;
+  }
+  .iris-button {
+    position: absolute;
+    bottom: 800px;
+    left: 700px;
+    background-color: #333;
+    color: white;
+    border: 2px solid #4285f4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 4;
+    transition: all 0.3s ease;
+  }
+  
+  .iris-button:hover {
+    background-color: #4285f4;
+  }
+  
+  .stargate__dhd {
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
+    width: 500px;
+    height: 300px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dhd-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px rgba(66, 133, 244, 0.7));
+  }
+  
+  .dhd-button {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .dhd-button:hover {
+    box-shadow: 0 0 30px #ff4500;
+  }
+  
+  .dhd-button.active {
+    box-shadow: 0 0 30px #ff0000;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px #ff0000;
+    }
+    to {
+      box-shadow: 0 0 30px #ff4500, 0 0 40px #ff8c00;
+    }
+  }
+  
+  
+  .chevron {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background: rgba(243, 242, 240, 0.2); /* Orange faible */
+    //clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);// lui est diamant
+    clip-path: polygon(16% 0, 84% 0, 100% 7%, 51% 54%, 0 6%);
+    transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  }
+  
+  /* Position des 7 chevrons autour du cercle */
+  .chevron-1 { top: 8%; left: 58%; transform: translateX(-50%) rotate(5deg); }    // 1:+ descendre 2:+ droite , lui ok
+  .chevron-2 { top: 23%; left: 84%; transform: translateX(-50%) rotate(50deg); }  // ok
+  .chevron-3 { top: 51.5%; left: 95%; transform: translateX(-50%) rotate(90deg); } // ok
+  .chevron-4 { bottom: 11%; left: 85%; transform: translateX(-50%) rotate(133deg); } // ok
+  .chevron-5 { bottom: 23.6%; left: 7.6%; transform: translateX(-50%) rotate(250deg); } //ok
+  .chevron-6 { bottom: 54.5%; left: 7.7%; transform: translateX(-50%) rotate(293deg); } // ok
+  .chevron-7 { top: 13%; left: 27.6%; transform: translateX(-50%) rotate(330deg); } // ok chevron supérieur gauche
+  
+  /* Effet lumineux quand actif */
+  .chevron.active {
+    background: rgb(238, 120, 60); /* Orange lumineux */
+    box-shadow: 0 0 20px rgb(68, 26, 2), 0 0 40px rgba(255, 69, 0, 1);
+    transition: all 0.5s ease-in-out;
+  }
+  
