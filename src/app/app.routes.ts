@@ -10,9 +10,12 @@ import { LegosComponent } from './pages/legos/legos.component';
 import { MircoComponent } from './pages/mirco/mirco.component';
 import { VideoComponent } from './pages/video/video.component';
 import { EspaceComponent } from './pages/espace/espace.component';
+import { VisitTrackingGuard } from './visit-tracking.guard';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '',
+    canActivate: [VisitTrackingGuard],
+    component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'dashboard', component: DashboardComponent },

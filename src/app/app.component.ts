@@ -1,9 +1,11 @@
 // src/app/app.component.ts
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
+
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { VisitTrackingService } from './visit-tracking.service';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -12,11 +14,16 @@ import { FooterComponent } from './components/footer/footer.component';
     RouterOutlet,
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+  constructor(private visitTrackingService: VisitTrackingService) {}
+
+  ngOnInit() {
+    this.visitTrackingService.trackInitialVisit();
+  }
   title = 'site-fred';
 }
